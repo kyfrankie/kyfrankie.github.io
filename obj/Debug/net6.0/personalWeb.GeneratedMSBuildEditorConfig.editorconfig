@@ -1,0 +1,47 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = browser
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = true
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = personalWeb
+build_property.RootNamespace = personalWeb
+build_property.ProjectDir = /home/kyhuiaf/kyfrankie.github.io/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/kyhuiaf/kyfrankie.github.io
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/kyhuiaf/kyfrankie.github.io/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/kyhuiaf/kyfrankie.github.io/Pages/Aboutme.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWJvdXRtZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/kyhuiaf/kyfrankie.github.io/Pages/Blog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQmxvZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/kyhuiaf/kyfrankie.github.io/Pages/Projects.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvamVjdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/kyhuiaf/kyfrankie.github.io/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/kyhuiaf/kyfrankie.github.io/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/kyhuiaf/kyfrankie.github.io/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

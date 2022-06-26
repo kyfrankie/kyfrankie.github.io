@@ -13,17 +13,17 @@ jobs:
       # uses GitHub's checkout action to checkout code form the master branch
       - uses: actions/checkout@v2
       # sets up .NET Core SDK 3.1
-      - name: Setup .NET Core SDK
+      - name: Setup ..NET SDK 6.0.x
         uses: actions/setup-dotnet@v2.1.0
         with:
-          dotnet-version: 3.1
+          dotnet-version: '6.0.x'
       # publishes Blazor project to the release-folder
       - name: Publish .NET Core Project
-        run: dotnet publish --configuration Release --output build
+        run: dotnet publish --configuration Release --output release
       # Commit to Github Pages
       - name: Commit wwwroot to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: build/wwwroot
+          FOLDER: release/wwwroot

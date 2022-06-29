@@ -22,16 +22,20 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/kyhuiaf/kyfrankie.github.io/Pages/Aboutme.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWJvdXRtZS5yYXpvcg==
+[/home/kyhuiaf/kyfrankie.github.io/Pages/Page-aboutme.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFnZS1hYm91dG1lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/kyhuiaf/kyfrankie.github.io/Pages/Blog.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQmxvZy5yYXpvcg==
+[/home/kyhuiaf/kyfrankie.github.io/Pages/Page-blog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFnZS1ibG9nLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/kyhuiaf/kyfrankie.github.io/Pages/Projects.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvamVjdHMucmF6b3I=
+[/home/kyhuiaf/kyfrankie.github.io/Pages/Page-projects.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFnZS1wcm9qZWN0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/kyhuiaf/kyfrankie.github.io/Pages/Projects-WLA.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvamVjdHMtV0xBLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/kyhuiaf/kyfrankie.github.io/Shared/MainLayout.razor]

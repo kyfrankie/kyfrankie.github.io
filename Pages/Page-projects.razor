@@ -3,32 +3,124 @@
 <PageTitle>Projects</PageTitle>
 
 <MudText Typo="Typo.h3" GutterBottom="true">Projects</MudText>
-<MudText> I am interested in different engineering disipline including Aerospace, Mechanical, Computer Science, and Robotics. In the past years, I have worked on different projects  </MudText>
+<MudText> 
+    I am interested in different engineering disiplines including Aerospace, Mechanical, Computer Science, and Robotics. 
+    In this page, I would like to introduce the projects that I have worked on in the past. Feel free to have a look!
+</MudText>
 
 <MudGrid class="pt-10">
     <MudItem xs="12" sm="6">
         <MudCard>
-            <MudCardMedia Image="images//WLA/WLA.png" Height="300" />
+            <MudCardMedia Image="images/ATS/ATS.png" Height="300" />
             <MudCardContent>
-                <MudText Typo="Typo.h5">Water-Land-Air (WLA) Drone</MudText>
-                @* <MudText Typo="Typo.body2">Old paint found on a stone house door.</MudText>
-                <MudText Typo="Typo.body2">This photo was taken in a small village in Istra Croatia.</MudText> *@
+                <MudText Typo="Typo.h5">AirTrafficSim</MudText>
+                <MudText Typo="Typo.subtitle1">Research project in HKUST OCTAD Lab (2021-now)</MudText>
+                <MudText Typo="Typo.body2">
+                    A web-based air transportation simulation and visualization platform writen in python and react.js with fully simulated autopilot and flight management system, 
+                    global aeronautic navigation database, ECWMF ERA5 weather model, BADA performance model, and more.
+                </MudText>   
             </MudCardContent>
-            <MudCardActions>
-                <MudButton Variant="Variant.Text" Color="Color.Primary" Href="projects/wla">Learn More</MudButton>
+            <MudCardActions class="pt-0">
+                <MudButton Disabled="true" Variant="Variant.Text" Color="Color.Tertiary" Href="projects/wla">Learn More</MudButton>
+                <MudChipSet ReadOnly="true">
+                    <MudChip>ATM</MudChip><MudChip>Python</MudChip><MudChip>Flask</MudChip><MudChip>React.js</MudChip>
+                </MudChipSet>
             </MudCardActions>
         </MudCard>
     </MudItem>
     <MudItem xs="12" sm="6">
         <MudCard>
-            <MudCardMedia Image="images//WLA/WLA.png" Height="300" />
+            <MudCardMedia Image="images/Personal/Personal1.png" Height="300" />
+            <MudCardContent>
+                <MudText Typo="Typo.h5">Personal website</MudText>
+                <MudText Typo="Typo.subtitle1">Personal web project (2022)</MudText>
+                <MudText Typo="Typo.body2">
+                    A simple personal website hosted on github pages to introduce myself and the projects that I have worked on. 
+                    It is built on the ASP.NET Blazor framework writen in C# and html.
+                    <br/><br/>
+                </MudText>
+            </MudCardContent>
+            <MudCardActions class="pt-0">
+                <MudButton Disabled="true" Variant="Variant.Text" Color="Color.Tertiary" Href="projects/wla">Learn More</MudButton>
+                <MudChipSet ReadOnly="true">
+                    <MudChip>ASP.NET</MudChip><MudChip>C#</MudChip><MudChip>Blazor</MudChip>
+                </MudChipSet>
+            </MudCardActions>
+        </MudCard>
+    </MudItem>
+    <MudItem xs="12" sm="6">
+        <MudCard>
+            <MudCardMedia Image="images/FYP/FYP.png" Height="300" />
+            <MudCardContent>
+                <MudText Typo="Typo.h5">Novel bio-inspired glider design</MudText>
+                <MudText Typo="Typo.subtitle1">Undergraduate final year project (2020-21)</MudText>
+                <MudText Typo="Typo.body2">
+                    A bio-inspired wing design for small UAV-class glider inspired by bird's primary/tip feather and covert feather to reduce drag and delay stall respectively. 
+                    CFD and wind tunnel was carried out in this undergraduate final year project with a group of 5 students.
+                </MudText>
+            </MudCardContent>
+            <MudCardActions class="pt-0">
+                <MudButton Disabled="true" Variant="Variant.Text" Color="Color.Tertiary" Href="projects/wla">Learn More</MudButton>
+                <MudChipSet ReadOnly="true">
+                    <MudChip>CFD</MudChip><MudChip>OpenFOAM</MudChip><MudChip>Windtunnel</MudChip>
+                </MudChipSet>
+            </MudCardActions>
+        </MudCard>
+    </MudItem>
+    <MudItem xs="12" sm="6">
+        <MudCard>
+            <MudCardMedia Image="images/WLA/WLA.png" Height="300" />
             <MudCardContent>
                 <MudText Typo="Typo.h5">Water-Land-Air (WLA) Drone</MudText>
-                @* <MudText Typo="Typo.body2">Old paint found on a stone house door.</MudText>
-                <MudText Typo="Typo.body2">This photo was taken in a small village in Istra Croatia.</MudText> *@
+                <MudText Typo="Typo.subtitle1">Undergraduate embedded system course project (2019)</MudText>
+                <MudText Typo="Typo.body2">
+                    A water-proofed amphibious drone with tilting rotors that can fly in the air, drive on surface, and float on water. 
+                    Custom mechanical structure, microcontroller ciruit, and control algorithm were designed, built, programmed, and tested.
+                </MudText>
             </MudCardContent>
-            <MudCardActions>
-                <MudButton Variant="Variant.Text" Color="Color.Primary" Href="projects/wla">Learn More</MudButton>
+            <MudCardActions class="pt-0">
+                <MudButton Variant="Variant.Text" Color="Color.Tertiary" Href="projects/wla">Learn More</MudButton>
+                <MudChipSet ReadOnly="true">
+                    <MudChip>UAV</MudChip><MudChip>STM32</MudChip><MudChip>C</MudChip><MudChip>SolidWorks</MudChip>
+                </MudChipSet>
+            </MudCardActions>
+        </MudCard>
+    </MudItem>
+    <MudItem xs="12" sm="6">
+        <MudCard>
+            <MudCardMedia Image="images/HK/HK2.png" Height="300" />
+            <MudCardContent>
+                <MudText Typo="Typo.h5">HKConnect</MudText>
+                <MudText Typo="Typo.subtitle1">Personal web project (2019)</MudText>
+                <MudText Typo="Typo.body2">
+                    A progressive web app intended for assisting information sharing and mutual aid within local communities. 
+                    The app is built with Ionic (react.js) framework writen in HTML, CSS, and Javascript and hosted on Google Firebase cloud service.
+                </MudText>
+            </MudCardContent>
+            <MudCardActions class="pt-0">
+                <MudButton Disabled="true" Variant="Variant.Text" Color="Color.Tertiary" Href="projects/wla">Learn More</MudButton>
+                <MudChipSet ReadOnly="true">
+                    <MudChip>React.js</MudChip><MudChip>Ionic</MudChip><MudChip>Firebase</MudChip>
+                </MudChipSet>
+            </MudCardActions>
+        </MudCard>
+    </MudItem>
+    <MudItem xs="12" sm="6">
+        <MudCard>
+            <MudCardMedia Image="images/Robocon/Robocon1.JPG" Height="300" />
+            <MudCardContent>
+                <MudText Typo="Typo.h5">HKUST robotics team</MudText>
+                <MudText Typo="Typo.subtitle1">Undergraduate ABU Asia-Pacific Robot Contest (2016-18)</MudText>
+                <MudText Typo="Typo.body2">
+                    An undergraduate robotics team to design and build robots to participate in ABU Asia-Pacific Robot Contest
+                    who won the the local contests in 2017 and 2018 and represented Hong Kong to participated in the international contests in Japan and Vietnam.
+                </MudText>
+            </MudCardContent>
+            <MudCardActions class="pt-0">
+                <MudButton Disabled="true" Variant="Variant.Text" Color="Color.Tertiary" Href="projects/wla">Learn More</MudButton>
+                <MudChipSet ReadOnly="true" >
+                    <MudChip>SolidWorks</MudChip><MudChip>CNC</MudChip><MudChip>Robotics</MudChip>
+                </MudChipSet>
             </MudCardActions>
         </MudCard>
     </MudItem>

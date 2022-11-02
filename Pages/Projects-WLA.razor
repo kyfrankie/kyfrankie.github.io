@@ -1,15 +1,135 @@
 @page "/projects/wla"
 
-<PageTitle>Water-Land-Air (WLA) Drone</PageTitle>
+<PageTitle> WLA Drone</PageTitle>
 
 <MudText Typo="Typo.h3" GutterBottom="true">Water-Land-Air (WLA) Drone</MudText>
-<MudText>   </MudText>
 
-<MudImage Src="images/WLA/WLA.png" Fluid="true"/>
-<div style="padding:50% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/724171491?h=0477e36163&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="WLA-Demo.mp4"></iframe>
-</div>
+<MudPaper Elevation="4" class="pa-10 mb-10">
+    <MudText Typo="Typo.h5">Introduction</MudText>
+    <MudText Typo="Typo.body2" class="mt-5 mb-5">
+        As part of the course project at HKUST of ELEC3300 Introduction to Embedded System, I have developed a water-proofed amphibious drone with tilting rotors that can fly in the air, move on the road, and sail on water. 
+        In this project, I designed, built, and tested the drone's custom mechanical structure, microcontroller circuit, and flight control algorithm.
+        Here's the render of the final design.
+    </MudText>
+    <MudImage Src="images/WLA/WLA.png" class="mt-5 mb-5" Fluid="true"/>
+    <MudText Typo="Typo.body2" class="mb-5">
+        Here is a demonstration video of the components and operations of the WLA drone.
+    </MudText>
+    <div style="padding:50% 0 0 0;position:relative;">
+        <iframe src="https://player.vimeo.com/video/724171491?h=0477e36163&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="WLA-Demo.mp4"></iframe>
+    </div>
+</MudPaper>
 
+<MudPaper Elevation="4" class="pa-10 mb-10">
+    <MudText Typo="Typo.h5">Design</MudText>
+    <MudText Typo="Typo.h6" class="mt-5">Mechanical</MudText>
+    <MudText Typo="Typo.body2">
+        The mechanical design of WLA drones is carried out with SolidWorks. It contains 2 main components, including the main central structure and the side motor structure.
+    </MudText>
+    <MudGrid class="pt-5">
+        <MudItem xs="12" sm="6">
+            <MudCard>
+                <MudCardMedia Image="images/WLA/WLA-tube.png" Height="300" />
+                <MudCardContent>
+                    <MudText Typo="Typo.subtitle2">Main central structure</MudText>
+                    <MudText Typo="Typo.body2">
+                        The purpose of the main central structure is to provide a waterproof space to store the electronics and battery.
+                        It is constructed with an acrylic tube, dome, and cover with two 3-D printed flanges. It is assembled with O-rings to water seal the internal compartment. 
+                        The forward transparent dome provides a space to put a camera for real-time monitoring. 
+                    </MudText>   
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+        <MudItem xs="12" sm="6">
+            <MudCard>
+                <MudCardMedia Image="images/WLA/WLA-arm.png" Height="300" />
+                <MudCardContent>
+                    <MudText Typo="Typo.subtitle2">Side motor structure</MudText>
+                    <MudText Typo="Typo.body2">
+                        The purpose of the side motor structures is to provide support and connect the servo and motor assembly to the main central structure. 
+                        It is a 3D-printed structure providing a mount and bearing support for the brushless motor mount and the servo motor. 
+                        At the bottom, there is a mount for an acrylic wheel to allow the drone to move on the road.
+                    </MudText>
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+        <MudItem xs="12" sm="6">
+            <MudCard>
+                <MudCardMedia Image="images/WLA/WLA-motor.png" Height="300" />
+                <MudCardContent>
+                    <MudText Typo="Typo.subtitle2">Servo and motor assembly</MudText>
+                    <MudText Typo="Typo.body2">
+                        WLA drone is powered by four servo and brushless DC motor assemblies.
+                        The brushless DC motor and mount, assembled to the side motor structure through bearing and shaft, generate thrust with the propeller.
+                        The servo motor is connected to the shaft changing the direction of the thrust produced to allow the drone to operate on land, water, and in the air.
+                    </MudText>
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+    </MudGrid>
+    <MudText Typo="Typo.h6" class="mt-5">Electronic</MudText>
+    <MudText Typo="Typo.body2">
+        The electronic system provides the hardware needed to control the drone. STM32H7 Microcontroller (MCU) is used in this project together with serval other sensors.
+    </MudText>
+    <MudGrid class="pt-5">
+        <MudItem xs="12" sm="6">
+            <MudCard>
+                <MudCardMedia Image="images/WLA/WLA-electronic.JPG" Height="300" />
+                <MudCardContent>
+                    <MudText Typo="Typo.subtitle2">Main board assembly</MudText>
+                    <MudText Typo="Typo.body2">
+                        The main board assembly is stored inside the main central structure. An STM32H7 Nucleo development board is mounted to the middle plate with a daughterboard installed on top.
+                        Sensors including, IMU, GPS, TFT screen, RC, and ESC are seated on the daughterboard and connected to the development board with wires.
+                        A battery is mounted on the other side. 
+                    </MudText>   
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+        <MudItem xs="12" sm="6">
+            <MudCard>
+                <MudCardMedia Image="images/WLA/WLA-pinout.png" Height="300" />
+                <MudCardContent>
+                    <MudText Typo="Typo.subtitle2">Microcontroller pinout</MudText>
+                    <MudText Typo="Typo.body2">
+                        The wiring and layout of the connection between sensors, power, and MCU are conducted using the STM32 CubeMX software.
+                        Each pin is configured with different embedded interfaces, such as I2C, SPI, PWM, and ADC. The clock speed and communication protocol is set according to the specification of the sensors.
+                    </MudText>
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+    </MudGrid>
+
+    <MudText Typo="Typo.h6" class="mt-5">Software</MudText>
+    <MudText Typo="Typo.body2">
+        The embedded software, written in C, processes the sensor data and user RC command to compute the required RPM of each motor for smooth movement. The software is available at <MudLink Href="#" Target="https://github.com/kyfrankie/Water-Land-Air-Drone" Typo="Typo.body2" Color="Color.Tertiary">https://github.com/kyfrankie/Water-Land-Air-Drone</MudLink>.
+    </MudText>
+    <MudGrid class="pt-5">
+        <MudItem xs="12" sm="6">
+            <MudCard>
+                <MudCardMedia Image="images/WLA/WLA-software.png" Height="300" />
+                <MudCardContent>
+                    <MudText Typo="Typo.subtitle2">Flight Control software</MudText>
+                    <MudText Typo="Typo.body2">
+                        The embedded flight control software makes use of the STM32 Hardware Abstraction Layer (HAL) library to configure and process data from and to various embedded interfaces.
+                        A custom program is written to process data for the IMU, GPS, RC (remote controller) and SD card, and export data to TFT (screen), servos and motors through PWM.
+                    </MudText>
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+        <MudItem xs="12" sm="6">
+            <MudCard>
+                <MudCardMedia Image="images/WLA/WLA-pid.png" Height="300" />
+                <MudCardContent>
+                    <MudText Typo="Typo.subtitle2">PID Controller</MudText>
+                    <MudText Typo="Typo.body2">
+                        A custom PID controller has been programmed and tuned for the WLA drone to command the rotational speed of each motor precisely for smooth and accurate movement.
+                        The controller continuously calculates the difference between desired and current states and applies a correction based on tuned proportional, integral, and derivative terms to control the RPM of each motor.
+                    </MudText>
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+    </MudGrid>
+</MudPaper>
 
 @code {
 }

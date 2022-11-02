@@ -1,59 +1,84 @@
 ﻿@page "/"
 
+<style>
+    @@keyframes fadeMe {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @@keyframes slide-up {
+        from {
+            margin-top: 100%;
+            height: 300%;
+        }
+        to {
+            margin-top: 0%;
+            height: 100%;
+        }
+    }
+</style>
+
 <PageTitle>About me</PageTitle>
 
 <MudText Typo="Typo.h3" GutterBottom="true">Welcome!</MudText>
-<MudText Class="mb-10">
-    Welcome to my personal website. I am Frankie, Ka-yiu HUI, currently studying MSc Aerospace Computatioanl Engineering in Cranfield University, UK. 
-    I am passionate with different engineering discplines including aerospace engineering, computer science, robotics, and more. In addition, I also enjoy photography, playing guitar, flying virtual jet in Microsoft Flight Simulatior.
+<MudText Class="mb-5">
+    Welcome to my website. I am Frankie, Ka-Yiu HUI, currently studying MSc Aerospace Computational Engineering at Cranfield University, UK. 
+    I am passionate about different engineering disciplines including aerospace engineering, computer science, robotics, and more. In addition, I also enjoy photography, playing the guitar, and flying virtual jets in Microsoft Flight Simulator.
     <br> <br>
-    In this page, I will introduce my education and professional background for those intersted. I will also showcase some exicting projects that I have worked on in past in the Projects page.
-    I will also write some blogs in the Blog page to bookmark some knowledge and reference that I have learned.
+    On this page, I will introduce my education and professional background for those interested. I will also showcase some exciting projects that I have worked on in past on the Projects page.
+    I will also write some blogs on the Blog page to bookmark some knowledge and reference that I have learned.
     <br> <br>
-    Thank you for your time and I wish you to have a great day!
+    Thank you for your time and I wish you have a great day!
     <br> <br>
     - Frankie Hui
 </MudText>
 
-<MudCarousel Class="mud-width-full mb-10" Style="height:300px;" ShowArrows="true" ShowBullets="true" EnableSwipeGesture="true" AutoCycle="true" TData="object">
+<MudCarousel Class="mud-width-full mb-10" Style="height:380px;" ShowArrows="true" ShowBullets="true" EnableSwipeGesture="true" AutoCycle="true" TData="object">
     <MudCarouselItem Transition="@Transition.Slide">
-        <div class="d-flex" style="height:100%">
+        <div class="d-flex" style="height:100% width:100%">
             <MudImage Class="mx-auto my-auto" Src="images/ATS/ATS.png" Height="300" ObjectPosition="ObjectPosition.Center"/>
+            <MudButton Href="#" Style="position: absolute; bottom: 40px" Variant="Variant.Text" Color="Color.Tertiary" FullWidth="true">AirTrafficSim</MudButton>
         </div>
     </MudCarouselItem>
     <MudCarouselItem Transition="@Transition.Slide">
-        <div class="d-flex" style="height:100%">
+        <div class="d-flex" style="height:100% width:100%">
             <MudImage Class="mx-auto my-auto" Src="images/FYP/FYP.png" Height="300" ObjectPosition="ObjectPosition.Center"/>
+            <MudButton Href="#" Style="position: absolute; bottom: 40px" Variant="Variant.Text" Color="Color.Tertiary" FullWidth="true">Novel Bio-inspired Glider Design</MudButton>
         </div>
     </MudCarouselItem>
     <MudCarouselItem Transition="@Transition.Slide">
         <div class="d-flex" style="height:100% width:100%">
             <MudImage Class="mx-auto my-auto" Src="images/WLA/WLA.png" Height="300" ObjectPosition="ObjectPosition.Center"/>
+            <MudButton Href="projects/wla" Style="position: absolute; bottom: 40px" Variant="Variant.Text" Color="Color.Tertiary" FullWidth="true">Water-Land-Air drone</MudButton>
         </div>
     </MudCarouselItem>
     <MudCarouselItem Transition="@Transition.Slide">
-        <div class="d-flex" style="height:100%">
+        <div class="d-flex" style="height:100% width:100%">
             <MudImage Class="mx-auto my-auto" Src="images/Robocon/Robocon1.JPG" Height="300" ObjectPosition="ObjectPosition.Center"/>
+            <MudButton Href="#" Style="position: absolute; bottom: 40px" Variant="Variant.Text" Color="Color.Tertiary" FullWidth="true">ABU Robocon 2017 & 2018</MudButton>
         </div>
     </MudCarouselItem>
 </MudCarousel>
 
 
 <MudPaper Class="pa-0" Elevation="0">
-    <MudText Typo="Typo.h4" GutterBottom="true">Curriculum vitae</MudText>
+    <MudText Typo="Typo.h4" GutterBottom="true"> My Curriculum Vitae</MudText>
     <MudButton Href="/images/CV_Frankie_Ka-yiu_HUI.pdf" Target="_blank" Class="mb-5" Variant="Variant.Outlined" EndIcon="@Icons.Material.Filled.ArrowDownward" Color="Color.Tertiary" Size="Size.Large">
-        Download the my 2-page PDF CV here!
+        Download my 2-page PDF CV here!
     </MudButton>
     <MudPaper Class="pa-5 mb-10" Elevation="2">
         <MudText Typo="Typo.h5" GutterBottom="true">Education</MudText>
         <MudCard Elevation="0">
             <MudCardContent>
-                <MudText Typo="Typo.h6">MSc Aerospace Computationl Engineering (2022-2023)</MudText>
+                <MudText Typo="Typo.h6">MSc Aerospace Computational Engineering (2022-2023)</MudText>
                 <MudText Typo="Typo.subtitle1">Cranfield University, United Kingdom</MudText>
                 <MudText Typo="Typo.body2">
                     <b>Modules:</b> 
                     C++ programming, Computational methods, Numerical modelling for incompressible flow, 
-                    Numerical modelling for compressible flow, Analysis and Visualisation of Big Data Systems and High Performance Computing, Modelling Approaches for Aerospace Applications, Computational Engineering 
+                    Numerical modelling for compressible flow, Analysis and Visualisation of Big Data Systems and High-Performance Computing, Modelling Approaches for Aerospace Applications, Computational Engineering 
                     Structures, Validation and Verification for Aerospace Applications.
                 </MudText>
             </MudCardContent>
@@ -76,7 +101,7 @@
                     Embedded system, Control system.
                 </MudText>
                 <MudText Typo="Typo.body2"><b>Graduation thesis: </b> 
-                    <MudLink Href="#" Typo="Typo.body2" Color="Color.Tertiary">"Novel Bio-inspired glider design".</MudLink>
+                    <MudLink Href="#" Typo="Typo.body2" Color="Color.Tertiary"> "Novel Bio-inspired glider design".</MudLink>
                     Collaborate with a group of 5 to analyse and apply bio-inspired features (bird’s wing tip and covert feathers) for glider’s wing design through leading CFD (OpenFOAM) analysis and conducting wind tunnel experiments.
                 </MudText>
             </MudCardContent>
@@ -131,9 +156,9 @@
                             <MudText Typo="Typo.overline"> Sep 2020 - Jun 2021 </MudText>
                             <MudText Typo="Typo.h6"> Final Year Design Project </MudText>
                             <MudText Typo="Typo.subtitle2" > The Hong Kong University of Science and Technology, Hong Kong</MudText>
-                            <MudText Typo="Typo.body2">Worked on the <MudLink Href="#" Typo="Typo.body2" Color="Color.Tertiary">"Novel Bio-inspired glider design"</MudLink> project in a team of 5 to analyze and apply features of biological creatures for glider design. Awarded “A”.</MudText>
+                            <MudText Typo="Typo.body2">Worked on the <MudLink Href="#" Typo="Typo.body2" Color="Color.Tertiary"> "Novel Bio-inspired glider design"</MudLink> project in a team of 5 to analyze and apply features of biological creatures for glider design. Awarded “A”.</MudText>
                             <MudText Typo="Typo.body2" class="mt-4">
-                                <li>Conduct comprehensive literature research of bio-inspired wing feature designs.</li>
+                                <li>Conduct comprehensive literature research on bio-inspired wing feature designs.</li>
                                 <li>Conduct computational fluid simulation (CFD) of the designs with OpenFoam.</li>
                                 <li>Design and conduct wind tunnel experiments.</li>
                                 <li>Preparing to publish the findings in a journal.</li>
@@ -171,7 +196,7 @@
                             <MudText Typo="Typo.body2">Designed and programmed an amphibious <MudLink Href="projects/wla" Typo="Typo.body2" Color="Color.Tertiary">“Land-Water-Air” (WLA) quadcopter</MudLink> with an STM32 microcontroller. Awarded “A+”.</MudText>
                             <MudText Typo="Typo.body2" class="mt-4">
                                 <li>Designed and built a quadcopter that can fly in the air, drive on the road, and float on the water.</li>
-                                <li>Designed and routed circuits for sensors and actuators such as IMU, GPS, servos, brushless motors.</li>
+                                <li>Designed and routed circuits for sensors and actuators such as IMU, GPS, servos, and brushless motors.</li>
                                 <li>Programed the control software in C from scratch using STM32.</li>
                                 <li>Implemented a PID flight controller.</li>
                             </MudText>
@@ -190,8 +215,8 @@
                             <MudText Typo="Typo.subtitle2" > Blue Sky Robotics, Hong Kong </MudText>
                             <MudText Typo="Typo.body2">Blue Sky Robotics is a start-up company aiming to produce electric vehicle charging robots for car parks.</MudText>
                             <MudText Typo="Typo.body2" class="mt-4">
-                                <li> Researched and proposeed different robotic arms and wheelbase ideas to the company. </li>
-                                <Li> Designed, built, and tested the electric vehicle charging robot prototypes for the company.</li>
+                                <li> Researched and proposed different robotic arms and wheelbase ideas to the company. </li>
+                                <li> Designed, built, and tested the electric vehicle charging robot prototypes for the company.</li>
                             </MudText>
                         </MudCardContent>
                     </MudCard>
@@ -209,7 +234,7 @@
                             <MudText Typo="Typo.body2" class="mt-4">
                                 <li> Won the local contests of the Asia-pacific robotics competition (ABU Robocon) 2017 and 2018. </li>
                                 <li> Represented Hong Kong to compete in the international context in Japan and Vietnam. Awarded best Design Award and Mabuchi Motor Award in ABU Robocon Japan 2017.</li>
-                                <li> Leaded a group of 10 mechanical engineering students to design, build, and test robots and various mechanisms. </li>
+                                <li> Led a group of 10 mechanical engineering students to design, build, and test robots and various mechanisms. </li>
                                 <li> Effectively communicated with manufacturers in mainland China to manufacture machined parts and materials and hardware and software members to iteratively improve the design.</li>
                                 <li> Organised the recruitment events and “Robot Design Contest” for freshmen in 2018 as Person-In-Charge. Tasks include formulating and hosting tutorial sections, creating game rules, organizing the contest’s game field and logistics, and managing different senior members’ tasks.</li>
                             </MudText>
@@ -231,3 +256,6 @@
         <MudText Typo="Typo.body2"> <b>Individual Interests: </b> Enjoys photography, videography, and playing music including guitar and piano. </MudText>
     </MudPaper>
 </MudPaper>
+
+@code {
+}
